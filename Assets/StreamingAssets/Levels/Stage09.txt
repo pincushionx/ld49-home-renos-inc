@@ -1,0 +1,210 @@
+
+            // Floor 0
+            floorTiles = new Dictionary<IVector2, FloorTile>();
+
+            for (int y = 0; y < 12; y++)
+            {
+                for (int x = 0; x < 12; x++)
+                {
+                    floorTiles.Add(new IVector2(x, y), new FloorTile(x, y));
+                }
+            }
+
+            floor = new Floor();
+            floor.floor = 0;
+            floor.floorTiles = floorTiles;
+            floor.height = 4;
+            floor.parts = new HashSet<Part>();
+            floor.Init();
+            floors.Add(floor);
+
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(0, 1, 8);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 LPillar");
+                        part.Position = new IVector3(15, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x1 Cubes");
+                        part.Position = new IVector3(14, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("4x2 Window");
+                        part.Position = new IVector3(13, 2, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 LPillar");
+                        part.Position = new IVector3(11, 1, 20);
+                        part.Rotation = new IVector3(0, 2, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Hook");
+                        part.Position = new IVector3(1, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(0, 1, 11);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Hook");
+                        part.Position = new IVector3(0, 1, 10);
+                        part.Rotation = new IVector3(0, 1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x1");
+                        part.Position = new IVector3(0, 1, 9);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Hook");
+                        part.Position = new IVector3(3, 1, 20);
+                        part.Rotation = new IVector3(0, 2, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Hook");
+                        part.Position = new IVector3(1, 3, 10);
+                        part.Rotation = new IVector3(0, -1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x4 Flowerpot");
+                        part.Position = new IVector3(10, 1, 7);
+                        part.Rotation = new IVector3(0, -1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x1");
+                        part.Position = new IVector3(11, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x1 Cubes");
+                        part.Position = new IVector3(2, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(3, 1, 0);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x1");
+                        part.Position = new IVector3(12, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x3 Door");
+                        part.Position = new IVector3(5, 1, 0);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Window");
+                        part.Position = new IVector3(10, 2, 7);
+                        part.Rotation = new IVector3(0, -1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x1 Cubes");
+                        part.Position = new IVector3(5, 4, 0);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x1 Cubes");
+                        part.Position = new IVector3(13, 4, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x3 Door");
+                        part.Position = new IVector3(7, 1, 0);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("2x2 Window");
+                        part.Position = new IVector3(2, 3, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(4, 1, 19);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("4x2 Window");
+                        part.Position = new IVector3(16, 1, 14);
+                        part.Rotation = new IVector3(0, -1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(8, 1, 0);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("4x2 Window");
+                        part.Position = new IVector3(16, 3, 14);
+                        part.Rotation = new IVector3(0, -1, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(15, 1, 11);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    

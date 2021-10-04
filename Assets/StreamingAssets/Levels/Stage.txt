@@ -1,0 +1,8 @@
+
+                        part = new Part();
+                        part.Type = partTypes.GetPartType("1x4 Pillar");
+                        part.Position = new IVector3(11, 1, 4);
+                        part.Rotation = new IVector3(0, 0, 0);
+                        part.TimeBorn = scene.Time;
+                        floor.AddPart(part);
+                    
